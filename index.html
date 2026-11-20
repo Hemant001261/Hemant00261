@@ -1,67 +1,49 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hemant Mittal | Cyber Security</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;background:#07111f;color:#eaf2ff;font-family:Arial,sans-serif}
-header{text-align:center;padding:70px 20px;background:linear-gradient(135deg,#102d50,#07111f)}
-h1{font-size:42px;color:#38e8c5}
-h2{color:#38e8c5}
-header p{color:#b8c9df}
-nav{padding:18px;text-align:center;background:#101e31;position:sticky;top:0}
-nav a{color:#fff;margin:12px;text-decoration:none}
-section{max-width:900px;margin:35px auto;padding:28px;background:#122238;border-radius:14px}
-.card{padding:15px;margin:10px 0;background:#1b304b;border-radius:9px}
-a{color:#38e8c5}
-footer{text-align:center;padding:30px;color:#aabbd0}
-button{padding:12px 22px;background:#38e8c5;border:0;border-radius:7px}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050b18">
+  <meta name="description" content="Hemant Mittal — Cyber Security, SOC, Data Analytics and Python portfolio.">
+  <title>Hemant Mittal | Cyber Security Portfolio</title>
+  <style>
+    :root{--bg:#050b18;--panel:#09172a;--panel2:#0b2037;--cyan:#16e5ff;--blue:#168bff;--purple:#c45cff;--gold:#ffc94a;--text:#f4f8ff;--muted:#a9bbd2;--line:rgba(22,229,255,.35);--shadow:0 0 24px rgba(22,229,255,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 80% 8%,#102c52 0,transparent 32%),radial-gradient(ellipse at 8% 35%,#101d46 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1200px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(3,9,20,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:900;letter-spacing:.08em}.brand small{display:block;color:var(--muted);font-size:.68rem;letter-spacing:.18em}.brand-mark{color:var(--gold);font-size:1.4rem;margin-right:8px}.navlinks{display:flex;gap:24px;flex-wrap:wrap;color:#d7e6fa;font-size:.92rem}.navlinks a:hover{color:var(--cyan)}
+    .hero{position:relative;overflow:hidden;padding:76px 0 42px;border-bottom:1px solid rgba(22,229,255,.18);background:linear-gradient(90deg,rgba(3,10,24,.96),rgba(5,16,34,.82)),radial-gradient(circle at 80% 20%,rgba(22,139,255,.28),transparent 38%)}.hero:after{content:"♜";position:absolute;right:4%;top:-60px;font-size:clamp(210px,32vw,430px);color:rgba(22,229,255,.055);transform:rotate(12deg);pointer-events:none}.hero-inner{position:relative;z-index:1;max-width:850px}.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem}.hero h1{font-size:clamp(2.5rem,7vw,5.8rem);line-height:1.02;margin:14px 0;background:linear-gradient(100deg,#fff 15%,var(--cyan) 52%,var(--gold) 88%);-webkit-background-clip:text;background-clip:text;color:transparent;text-transform:uppercase;letter-spacing:.02em}.hero h2{font-size:clamp(1rem,2vw,1.35rem);font-weight:600;color:#dcecff;margin:0}.tagline{color:var(--gold);font-style:italic;font-weight:700;margin:18px 0 26px}.chips,.actions{display:flex;flex-wrap:wrap;gap:10px}.chip{border:1px solid var(--line);background:rgba(7,27,48,.75);padding:7px 13px;border-radius:8px;color:#dffaff;font-size:.86rem}.btn{display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border-radius:9px;font-weight:800;border:1px solid var(--cyan);background:linear-gradient(120deg,rgba(22,229,255,.2),rgba(22,139,255,.12));box-shadow:var(--shadow)}.btn.gold{border-color:var(--gold);color:#ffe7a2;background:rgba(255,201,74,.08)}.actions{margin-top:25px}
+    section{padding:30px 0}.section-title{font-size:1.45rem;margin:0 0 18px;display:flex;align-items:center;gap:10px}.section-title:before{content:"";width:5px;height:25px;border-radius:4px;background:linear-gradient(var(--cyan),var(--purple));box-shadow:0 0 12px var(--cyan)}.grid{display:grid;gap:16px}.two{grid-template-columns:1fr 1.5fr}.panel{background:linear-gradient(145deg,rgba(11,32,55,.94),rgba(5,14,29,.94));border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}.about p{color:var(--muted);margin:.45rem 0}.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.fact{font-size:.83rem;padding:7px 10px;border-radius:8px;background:#102943;color:#d7eaff;border:1px solid rgba(22,229,255,.18)}
+    .skills{grid-template-columns:repeat(4,1fr)}.skill{padding:14px 10px;text-align:center;border:1px solid rgba(22,229,255,.25);border-radius:12px;background:rgba(4,17,34,.7)}.skill b{display:block;font-size:1rem;color:var(--cyan)}.skill span{font-size:.82rem;color:var(--muted)}.focus{display:flex;flex-wrap:wrap;gap:9px}.focus span{padding:8px 11px;border-radius:8px;background:rgba(196,92,255,.1);border:1px solid rgba(196,92,255,.35);font-size:.84rem}
+    .projects{grid-template-columns:repeat(3,1fr)}.project{min-height:190px;display:flex;flex-direction:column;gap:9px}.project .symbol{font-size:1.8rem;color:var(--cyan)}.project h3{margin:0}.project p{margin:0;color:var(--muted);font-size:.92rem}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}.tags span{font-size:.75rem;color:#dffaff;border:1px solid rgba(22,229,255,.3);border-radius:20px;padding:3px 9px}.learning{display:flex;flex-wrap:wrap;gap:10px}.learning span{border:1px solid rgba(255,201,74,.4);color:#ffe6a0;background:rgba(255,201,74,.07);border-radius:9px;padding:9px 12px;font-size:.86rem}.contact{display:flex;flex-wrap:wrap;gap:12px}.contact a{border:1px solid var(--line);padding:10px 14px;border-radius:9px;color:#dffaff}.contact a:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.15)}footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.84rem;text-align:center}
+    @media(max-width:850px){.two{grid-template-columns:1fr}.projects{grid-template-columns:1fr 1fr}.skills{grid-template-columns:repeat(2,1fr)}.nav{padding:12px 0;align-items:flex-start;flex-direction:column}.navlinks{gap:14px}}
+    @media(max-width:560px){.hero{padding:52px 0 32px}.projects{grid-template-columns:1fr}.panel{padding:17px}.navlinks{font-size:.82rem}.hero h1{font-size:2.6rem}}
+  </style>
 </head>
 <body>
-<header>
-<h1>⚡ HEMANT MITTAL ⚡</h1>
-<h3>Cyber Security | Python Developer | SOC Analyst</h3>
-<p>Think Like a Dragon. Defend Like a Guardian.</p>
-</header>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#learning">Learning</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
-<section id="about">
-<h2>👨 About Me</h2>
-<p>Hello! I'm Hemant Mittal from India.</p>
-<p>BCA Graduate | Aspiring Cyber Security Professional | Python Developer</p>
-</section>
-<section id="skills">
-<h2>🛠 Skills & Tools</h2>
-<div class="card">Python | SQL | Linux | Kali Linux</div>
-<div class="card">Wireshark | Nmap | Metasploit</div>
-<div class="card">SOC | SIEM | Incident Response</div>
-</section>
-<section id="learning">
-<h2>📚 Currently Learning</h2>
-<div class="card">Cyber Security Fundamentals</div>
-<div class="card">SOC Analyst & SIEM</div>
-<div class="card">Python Programming</div>
-<div class="card">Network Security</div>
-</section>
-<section id="projects">
-<h2>🚀 My Projects</h2>
-<div class="card">Python Programming Projects</div>
-<div class="card">Cyber Security Labs</div>
-<div class="card">Data Analysis Projects</div>
-</section>
-<section id="contact">
-<h2>📩 Contact</h2>
-<p>GitHub: <a href="https://github.com/Hemant001261">Visit My GitHub</a></p>
-</section>
-<footer>© 2026 Hemant Mittal | Personal Portfolio</footer>
+  <div class="topbar"><div class="wrap nav">
+    <a class="brand" href="#home"><span class="brand-mark">♛</span>HEMANT MITTAL<small>CYBER SECURITY PORTFOLIO</small></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#learning">Learning</a><a href="#contact">Contact</a></nav>
+  </div></div>
+  <header class="hero" id="home"><div class="wrap hero-inner">
+    <div class="eyebrow">Cyber Security • SOC • Data • Development</div>
+    <h1>Hemant Mittal</h1>
+    <h2>Cyber Security Learner&nbsp; | &nbsp;Aspiring SOC Analyst&nbsp; | &nbsp;Data Analyst&nbsp; | &nbsp;Python Developer</h2>
+    <p class="tagline">“Think Like a Dragon. Defend Like a Guardian.”</p>
+    <div class="chips"><span class="chip">🛡️ SOC & SIEM</span><span class="chip">🐍 Python</span><span class="chip">📊 Data Analytics</span><span class="chip">🐧 Linux & Kali</span><span class="chip">🔎 Network Security</span></div>
+    <div class="actions"><a class="btn" href="https://github.com/Hemant001261" target="_blank" rel="noopener">⌘ View GitHub</a><a class="btn gold" href="#projects">▣ Explore Projects</a></div>
+  </div></header>
+  <main class="wrap">
+    <section class="grid two" id="about">
+      <article class="panel about"><h2 class="section-title">About Me</h2><p>Hello! I’m Hemant Mittal from India. I’m a BCA graduate building practical skills in cyber security, SOC operations, data analytics and Python development.</p><p>I enjoy learning through hands-on labs, small projects and continuous practice.</p><div class="facts"><span class="fact">🎓 BCA — Jaipur National University, 2021</span><span class="fact">📍 India</span><span class="fact">💻 Project-based learner</span></div></article>
+      <article class="panel" id="skills"><h2 class="section-title">Skills & Tools</h2><div class="grid skills"><div class="skill"><b>Python</b><span>Programming</span></div><div class="skill"><b>SQL</b><span>Databases</span></div><div class="skill"><b>Excel</b><span>Data handling</span></div><div class="skill"><b>Power BI</b><span>Visualization</span></div><div class="skill"><b>Linux</b><span>Command line</span></div><div class="skill"><b>Kali Linux</b><span>Security labs</span></div><div class="skill"><b>Wireshark</b><span>Traffic analysis</span></div><div class="skill"><b>Nmap</b><span>Network scanning</span></div><div class="skill"><b>QRadar</b><span>SIEM learning</span></div><div class="skill"><b>Splunk</b><span>Log analysis</span></div><div class="skill"><b>Pandas</b><span>Data analysis</span></div><div class="skill"><b>NumPy</b><span>Python data tools</span></div></div></article>
+    </section>
+    <section id="projects"><h2 class="section-title">Featured Projects</h2><div class="grid projects">
+      <article class="panel project"><div class="symbol">🎓</div><h3>Student Management System</h3><p>A Python project for managing student information and records.</p><div class="tags"><span>Python</span><span>SQLite</span></div></article>
+      <article class="panel project"><div class="symbol">📊</div><h3>Data Analysis Project</h3><p>Exploring and analysing datasets using Python data libraries.</p><div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span></div></article>
+      <article class="panel project"><div class="symbol">🤖</div><h3>Basic AI Chatbot</h3><p>A beginner-friendly Python chatbot for simple interactive conversations.</p><div class="tags"><span>Python</span><span>NLP</span></div></article>
+    </div></section>
+    <section id="learning"><div class="panel"><h2 class="section-title">Currently Learning</h2><div class="learning"><span>Cyber Security Fundamentals</span><span>SOC & SIEM</span><span>Network Security</span><span>Incident Response</span><span>Python & SQL</span><span>Linux & Kali Linux</span><span>TryHackMe Labs</span></div></div></section>
+    <section id="contact"><div class="panel"><h2 class="section-title">Connect With Me</h2><p style="color:var(--muted)">For collaboration, learning and project discussions:</p><div class="contact"><a href="https://github.com/Hemant001261" target="_blank" rel="noopener">⌘ GitHub Profile</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">in LinkedIn</a></div></div></section>
+  </main>
+  <footer><div class="wrap">© <span id="year">2026</span> Hemant Mittal · Cyber Security Portfolio</div></footer>
 </body>
 </html>
